@@ -35,6 +35,8 @@ const Index = () => {
                         Connect Wallet
                       </button>
                     );
+                  } else {
+                    return <div></div>;
                   }
                 })()}
               </div>
