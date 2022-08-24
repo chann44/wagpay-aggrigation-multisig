@@ -4,6 +4,7 @@ import CardLayout from "@/layouts/cardlayout";
 import { Meta } from "@/layouts/Meta";
 import { Main } from "@/templates/Main";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import Link from "next/link";
 
 const Index = () => {
   // const router = useRouter();
@@ -36,7 +37,13 @@ const Index = () => {
                       </button>
                     );
                   } else {
-                    return <div></div>;
+                    return (
+                      <Link href="/safes">
+                        <div className="bg-secoandryColor px-4 py-2 text-lg rounded-full">
+                          see all your safes
+                        </div>
+                      </Link>
+                    );
                   }
                 })()}
               </div>
