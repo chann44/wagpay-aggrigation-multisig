@@ -15,8 +15,8 @@ const chainList = [
 
 const ChainSelect = () => {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
-  const [value, setValue] = useState();
-  const [icon, setIcon] = useState();
+  const [value, setValue] = useState(chainList[0]?.name);
+  const [icon, setIcon] = useState(chainList[1]?.icon);
 
   const selectedChain = (chain: any) => {
     setValue(chain.name);
@@ -64,7 +64,7 @@ const ChainSelect = () => {
           {chainList.map((chain: any) => (
             <div
               key={chain.id}
-              className="flex h-11 w-full cursor-pointer select-none flex-row justify-between bg-primaryGray py-0 pl-3 pr-2 hover:bg-gray-400 dark:bg-secondaryGray dark:text-white"
+              className="flex h-11 w-full cursor-pointer select-none bg-terceryDark flex-row justify-between bg-primaryGray py-0 pl-3 pr-2 dark:bg-secondaryGray dark:text-white"
               onClick={() => selectedChain(chain)}
             >
               <div className="flex h-full flex-row items-center">

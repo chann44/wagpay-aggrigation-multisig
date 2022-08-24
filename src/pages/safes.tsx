@@ -1,10 +1,11 @@
-import Background from "@/components/background";
-import Badge from "@/components/badge";
+import Background from "@/layouts/background";
+import Badge from "@/layouts/badge";
+import CardLayout from "@/layouts/cardlayout";
 
 const Safes = () => {
   return (
     <>
-      <div className="h-[80vh] w-full flex justify-center items-center">
+      <CardLayout>
         <Background>
           <Badge>
             <p className="text-2xl">
@@ -27,7 +28,7 @@ const Safes = () => {
             </p>
           </Badge>
         </Background>
-      </div>
+      </CardLayout>
     </>
   );
 };

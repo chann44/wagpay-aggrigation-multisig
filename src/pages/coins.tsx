@@ -1,11 +1,12 @@
-import Background from "@/components/background";
-import Badge from "@/components/badge";
+import Background from "@/layouts/background";
+import Badge from "@/layouts/badge";
 import Coin from "@/components/coin";
+import CardLayout from "@/layouts/cardlayout";
 
 const Coins = () => {
   return (
     <>
-      <div className="h-[80vh] w-full flex justify-center items-center">
+      <CardLayout>
         <Background>
           <Badge>
             <Coin />
@@ -17,7 +18,7 @@ const Coins = () => {
             <Coin />
           </Badge>
         </Background>
-      </div>
+      </CardLayout>
     </>
   );
 };
