@@ -1,4 +1,3 @@
-import Link from "next/link";
 import assets from "public.json";
 const Coin = () => {
   return (

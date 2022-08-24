@@ -12,14 +12,7 @@ const Index = () => {
     <Main meta={<Meta title="wagpay swap" description="" />}>
       <CardLayout>
         <ConnectButton.Custom>
-          {({
-            account,
-            chain,
-            openAccountModal,
-            openChainModal,
-            openConnectModal,
-            mounted,
-          }) => {
+          {({ account, chain, openConnectModal, mounted }) => {
             return (
               <div
                 {...(!mounted && {
