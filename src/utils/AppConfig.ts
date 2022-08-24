@@ -1,6 +1,6 @@
 export const AppConfig = {
-  site_name: 'sure',
-  title: 'sure',
-  description: 'open marketplace for audeting smart contracts',
-  locale: 'en',
+  site_name: "wagpay swap  ",
+  title: "swaping made easy ",
+  description: " swap tokens inside of your multisig wallet",
+  locale: "en",
 };
