@@ -11,7 +11,7 @@ const Transection = () => {
       <CardLayout>
         <Background>
           <div className="w-full flex space-x-3">
-            <div className="w-[50%] space-y-2">
+            <div className="w-[50%] xl:block hidden space-y-2">
               <Badge>
                 <Coin />
               </Badge>
@@ -22,7 +22,7 @@ const Transection = () => {
                 <Coin />
               </Badge>
             </div>
-            <div className="w-[50%] pt-14 space-y-4">
+            <div className="w-full xl:w-[50%] p-4 lg:pt-14 space-y-4">
               <div className="flex space-x-2">
                 <div className="bg-terceryDark w-full flex justify-center">
                   <ChainSelect />

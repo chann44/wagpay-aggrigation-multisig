@@ -1,7 +1,8 @@
+import Link from "next/link";
 import assets from "public.json";
 const Coin = () => {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex cursor-pointer justify-between items-center">
       <div className="text-left">
         <p className="text-2xl">USDC Coin</p>
         <p className="text-sm">ox234...23</p>

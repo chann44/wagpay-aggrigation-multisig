@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     provider,
   });
   return (
-    <div className="bg-primaryDark h-screen">
+    <div className="bg-primaryDark h-screen overflow-hidden">
       <WagmiConfig client={wagmiClient}>
         <RainbowKitProvider chains={chains}>
           <Navbar2 />

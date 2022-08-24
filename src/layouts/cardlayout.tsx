@@ -7,7 +7,7 @@ interface Props {
 const CardLayout = ({ children }: Props) => {
   return (
     <>
-      <div className="h-[80vh] w-full flex justify-center items-center">
+      <div className="h-[80vh] overflow-hidden w-full flex justify-center items-center">
         {children}
       </div>
     </>

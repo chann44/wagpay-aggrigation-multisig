@@ -1,25 +1,54 @@
 // import { useRouter } from 'next/router';
 
-import { Meta } from '@/layouts/Meta';
-import { Main } from '@/templates/Main';
+import CardLayout from "@/layouts/cardlayout";
+import { Meta } from "@/layouts/Meta";
+import { Main } from "@/templates/Main";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 const Index = () => {
   // const router = useRouter();
 
   return (
-    <Main
-      meta={
-        <Meta
-          title="Next.js Boilerplate Presentation"
-          description="Next js Boilerplate is the perfect starter code for your project. Build your React application with the Next.js framework."
-        />
-      }
-    >
-      <h1 className="text-center text-2xl">Hello world</h1>
-      {/* <img
-          src={`${router.basePath}/assets/images/nextjs-starter.png`}
-          alt="Nextjs starter"
-        /> */}
+    <Main meta={<Meta title="wagpay swap" description="" />}>
+      <CardLayout>
+        <ConnectButton.Custom>
+          {({
+            account,
+            chain,
+            openAccountModal,
+            openChainModal,
+            openConnectModal,
+            mounted,
+          }) => {
+            return (
+              <div
+                {...(!mounted && {
+                  "aria-hidden": true,
+                  style: {
+                    opacity: 0,
+                    pointerEvents: "none",
+                    userSelect: "none",
+                  },
+                })}
+              >
+                {(() => {
+                  if (!mounted || !account || !chain) {
+                    return (
+                      <button
+                        onClick={openConnectModal}
+                        type="button"
+                        className="rounded-full border border-transparent bg-secoandryColor text-white py-2 px-4 text-base font-medium text-wagpay-dark"
+                      >
+                        Connect Wallet
+                      </button>
+                    );
+                  }
+                })()}
+              </div>
+            );
+          }}
+        </ConnectButton.Custom>
+      </CardLayout>
     </Main>
   );
 };

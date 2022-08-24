@@ -6,7 +6,7 @@ const Navbar2 = () => {
   return (
     <header className="bg-wagpay-dark pb-4 lg:pb-0">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
-        <div className="flex w-full items-center justify-between border-b border-wagpay-dark py-6 lg:border-none">
+        <div className="flex w-full items-center justify-between py-6 ">
           <div className="flex items-center">
             <Link href="/">
               <a className="text-[#615CCD]">
@@ -64,7 +64,7 @@ const Navbar2 = () => {
                         <div className="flex flex-col space-y-2 sm:flex-row sm:space-x-2 sm:space-y-0 md:space-x-4 lg:space-x-6">
                           <button
                             onClick={openChainModal}
-                            className="flex items-center text-white rounded-full border border-transparent bg-[#615CCD] px-1 text-base font-medium  hover:bg-indigo-50"
+                            className="flex items-center text-white rounded-full border border-transparent bg-[#615CCD] px-1 text-base font-medium  "
                             type="button"
                           >
                             {chain.hasIcon && (
@@ -95,7 +95,7 @@ const Navbar2 = () => {
                           <button
                             onClick={openAccountModal}
                             type="button"
-                            className="rounded-full border border-transparent px-7  bg-[#615CCD]  text-base text-white "
+                            className="rounded-full px-7  bg-[#615CCD]  text-base text-white "
                           >
                             {account.displayName}
                           </button>
