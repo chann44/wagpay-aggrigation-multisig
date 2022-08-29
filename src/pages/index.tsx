@@ -1,14 +1,12 @@
-// import { useRouter } from 'next/router';
+import Link from "next/link";
+
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 import CardLayout from "@/layouts/cardlayout";
 import { Meta } from "@/layouts/Meta";
 import { Main } from "@/templates/Main";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
-import Link from "next/link";
 
 const Index = () => {
-  // const router = useRouter();
-
   return (
     <Main meta={<Meta title="wagpay swap" description="" />}>
       <CardLayout>
@@ -31,7 +29,7 @@ const Index = () => {
                       <button
                         onClick={openConnectModal}
                         type="button"
-                        className="rounded-full border border-transparent bg-secoandryColor text-white py-2 px-4 text-base font-medium text-wagpay-dark"
+                        className="rounded-full border border-transparent bg-secondaryColor text-white py-2 px-4 text-base font-medium text-wagpay-dark"
                       >
                         Connect Wallet
                       </button>
@@ -39,7 +37,7 @@ const Index = () => {
                   } else {
                     return (
                       <Link href="/safes">
-                        <div className="bg-secoandryColor px-4 py-2 text-lg rounded-full">
+                        <div className="bg-secondaryColor px-4 py-2 text-lg rounded-full">
                           see all your safes
                         </div>
                       </Link>

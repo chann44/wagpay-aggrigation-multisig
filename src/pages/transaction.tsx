@@ -1,7 +1,7 @@
 import ChainSelect from "@/components/chainselect";
 import Coin from "@/components/coin";
 import CoinSelect from "@/components/coinselect";
-import Background from "@/layouts/background";
+import Background from "@/layouts/Background";
 import Badge from "@/layouts/badge";
 import CardLayout from "@/layouts/cardlayout";
 
@@ -50,7 +50,7 @@ const Transection = () => {
                     <p>hypehen</p>
                   </div>
                 </Badge>
-                <button className="bg-secoandryColor w-full p-2 text-white">
+                <button className="bg-secondaryColor w-full p-2 text-white">
                   swap
                 </button>
               </div>

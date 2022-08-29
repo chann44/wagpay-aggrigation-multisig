@@ -8,7 +8,7 @@ module.exports = {
         primaryDark: "#101010",
         secondaryDark: "#191919",
         terceryDark: "#1F1F1F",
-        secoandryColor: "#615CCD",
+        secondaryColor: "#615CCD",
       },
       maxWidth: {
         "8xl": "88rem",

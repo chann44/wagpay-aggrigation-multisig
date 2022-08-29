@@ -7,6 +7,9 @@ module.exports = withBundleAnalyzer({
   eslint: {
     dirs: ['.'],
   },
+  images: {
+    domains: ['movricons.s3.ap-south-1.amazonaws.com'],
+  },
   poweredByHeader: false,
   trailingSlash: true,
   basePath: '',

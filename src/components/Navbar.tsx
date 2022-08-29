@@ -42,7 +42,7 @@ const Navbar2 = () => {
                           <button
                             onClick={openConnectModal}
                             type="button"
-                            className="rounded-full border border-transparent bg-secoandryColor text-white py-2 px-4 text-base font-medium text-wagpay-dark"
+                            className="rounded-full border border-transparent bg-secondaryColor text-white py-2 px-4 text-base font-medium text-wagpay-dark"
                           >
                             Connect Wallet
                           </button>

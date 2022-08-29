@@ -1,4 +1,4 @@
-import Background from "@/layouts/background";
+import Background from "@/layouts/Background";
 import Badge from "@/layouts/badge";
 import Coin from "@/components/coin";
 import CardLayout from "@/layouts/cardlayout";
